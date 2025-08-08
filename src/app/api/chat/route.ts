@@ -16,7 +16,13 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         model: "anthropic/claude-sonnet-4",
-        messages,
+        messages: [
+          {
+            role: "system",
+            content: "You are a helpful, knowledgeable, and friendly AI assistant. Provide clear, accurate, and helpful responses. Be conversational but professional. If you're unsure about something, acknowledge it honestly."
+          },
+          ...messages
+        ],
       }),
     });
 
