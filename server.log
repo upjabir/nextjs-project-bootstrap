@@ -1,0 +1,18 @@
+nohup: ignoring input
+
+> my-app@0.1.0 dev
+> PORT=8000 next dev --turbopack -H 0.0.0.0
+
+   ▲ Next.js 15.3.2 (Turbopack)
+   - Local:        http://localhost:8000
+   - Network:      http://0.0.0.0:8000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1764ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.4s
+ HEAD / 200 in 3902ms
+ ○ Compiling /chat ...
+ ✓ Compiled /chat in 1224ms
+ HEAD /chat 200 in 1327ms
